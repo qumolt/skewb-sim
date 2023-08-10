@@ -395,6 +395,29 @@ class skewb{
 		vertex(this.cX, this.cY + this.a*0.5);
 		endShape();
 	}
+
+	scramble(scrambleMode){
+		let randomMove = 0;
+		let lastRand1 = -1;
+		let lastRand2 = -1;
+		let nMove = 20;
+
+		while(nMove >= 0){
+			randomMove = Math.floor(Math.random() * 4);
+
+			if(randomMove == lastRand1 && randomMove == lastRand2){continue;}
+
+			if(randomMove < 1){this.moveC();}
+			else if(randomMove < 2){this.moveG();}
+			else if(randomMove < 3){this.moveH();}
+			else{this.moveF();}
+
+			lastRand2 = lastRand1;
+			lastRand1 = randomMove;
+			nMove--;
+		}
+	}
+
 	rotateCorner(cc, f1, f2, f3, c1, c2, c3){
 		let aux = cc.x;
 		cc.x = cc.z;

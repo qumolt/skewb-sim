@@ -81,6 +81,7 @@ function draw() {
 		text("d/c: Z/Z'", 420, 300);
 		text("enter: reset", 420, 330);
 		text("space: clear", 420, 350);
+		text("0: scramble", 420, 380);
 	}
 }
 function cbInfoEvent(){
@@ -193,6 +194,9 @@ function keyPressed(){
 	case 32: 				//space -> clear
 		aHist.splice(0, aHist.length);
 		break; 
+	case 48: 				//0 -> scramble
+		skewbI.scramble(1);
+		break;
 	default: break;
 	} 
 	drawHist();
