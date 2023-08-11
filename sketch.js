@@ -26,39 +26,79 @@ function draw() {
 	skewbI.drawSkewb();
 
 	if(showInfo){
-		strokeWeight(2);
 		ellipseMode(CENTER);
-		stroke(32, 200, 200);
-		ellipse(115, 100, 30, 30);
-		line(115, 100, 420, 220); 	//b7
 
-		stroke(64, 200, 200);
-		ellipse(200, 150, 30, 30);
-		line(200, 150, 420, 180);	//a5
-
-		stroke(96, 200, 200);
+		stroke(32);
+		strokeWeight(4);
+		line(300, 100, 415, 240);
 		ellipse(285, 100, 30, 30);
-		line(285, 100, 420, 240);	//d8
-		
-		stroke(128, 200, 200);
-		ellipse(200, 50, 30, 30);	
-		line(200, 50, 420, 100);	//c1
-		
-		stroke(160, 200, 200);
-		ellipse(115, 300, 30, 30);
-		line(115, 300, 420, 140);	//h3
-		
-		stroke(192, 200, 200);
+		stroke(255, 170, 200);
+		strokeWeight(2);
+		line(300, 100, 415, 240);	//d8
+		ellipse(285, 100, 30, 30);
+
+		stroke(32);
+		strokeWeight(4);
+		line(130, 100, 415, 220);
+		ellipse(115, 100, 30, 30);
+		stroke(224, 170, 200);
+		strokeWeight(2);
+		line(130, 100, 415, 220); 	//b7
+		ellipse(115, 100, 30, 30);
+
+		stroke(32);
+		strokeWeight(4);
+		line(215, 250, 415, 200);
 		ellipse(200, 250, 30, 30);
-		line(200, 250, 420, 200);	//e6
+		stroke(192, 170, 200);
+		strokeWeight(2);
+		line(215, 250, 415, 200);	//e6
+		ellipse(200, 250, 30, 30);
+
+		stroke(32);
+		strokeWeight(4);
+		line(215, 150, 415, 180);
+		ellipse(200, 150, 30, 30);
+		stroke(160, 170, 200);
+		strokeWeight(2);
+		line(215, 150, 415, 180);	//a5
+		ellipse(200, 150, 30, 30);
 		
-		stroke(224, 200, 200);
+		stroke(255);
+		strokeWeight(4);
+		line(300, 300, 415, 160);
 		ellipse(285, 300, 30, 30);
-		line(285, 300, 420, 160);	//f4
+		stroke(196, 200, 200);
+		strokeWeight(2);
+		line(300, 300, 415, 160);	//f4
+		ellipse(285, 300, 30, 30);
 		
-		stroke(255, 200, 200);
+		stroke(255);
+		strokeWeight(4);
+		line(130, 300, 415, 140);
+		ellipse(115, 300, 30, 30);
+		stroke(96, 200, 200);
+		strokeWeight(2);
+		line(130, 300, 415, 140);	//h3
+		ellipse(115, 300, 30, 30);
+		
+		stroke(255);
+		strokeWeight(4);
+		line(215, 350, 415, 120);
 		ellipse(200, 350, 30, 30);
-		line(200, 350, 420, 120);	//g2		
+		stroke(0, 200, 200);
+		strokeWeight(2);
+		line(215, 350, 415, 120);	//g2		
+		ellipse(200, 350, 30, 30);
+
+		stroke(255);
+		strokeWeight(4);
+		line(215, 50, 415, 100);
+		ellipse(200, 50, 30, 30);
+		stroke(32, 200, 200);
+		strokeWeight(2);
+		line(215, 50, 415, 100);	//c1
+		ellipse(200, 50, 30, 30);	
 
 		//textFont('Helvetica');
 		textFont('monospace');
